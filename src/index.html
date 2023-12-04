@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <title>Fortune Cookie</title>
 </head>
-<body>
-  
+<body class="h-screen flex items-center justify-center bg-gradient-to-tr from-violet-950 to-fuchsia-500 text-indigo-900">
+  <div class="bg-white max-w-[420px] rounded-md px-16 py-12 shadow-2xl">
+    <div class="flex flex-col items-center gap-3" id="biscoitoBox">
+      <p class="font-montserrat font-bold text-2xl text-center">Qual é a sua sorte de hoje?</p>
+      <p class="font-dmSans">Abra o biscoito e descubra!</p>
+      <img src="../Bisco.png" alt="biscoito da sorte" class="cursor-pointer hover:animate-wiggle hover:animate-infinite" id="biscoito">
+    </div>
+    <div class="flex flex-col items-center justify-center gap-3 hidden" id="biscoitoAbertoBox">
+      <p class="font-montserrat font-bold text-2xl text-center">Aqui está a sua sorte de hoje:</p>
+      <h1 class="font-dancing text-center text-black bg-blue-100 p-3 shadow-2xl text-lg animate-jump animate-once" id="message"></h1>
+
+      <img src="../Bisco-aberto.png" alt="" id="biscoitoAberto" class="my-4">
+      <button class="text-white bg-orange-400 p-2 rounded-md">Abrir outro biscoito</button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>

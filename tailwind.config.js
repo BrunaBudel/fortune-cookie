@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        dancing: ['Dancing Script', 'cursive'],
+        dmSans: ['DM Sans', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
